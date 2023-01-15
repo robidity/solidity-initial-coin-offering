@@ -1,16 +1,6 @@
+![my badge](https://badgen.net/badge/license/MIT/green) ![my badge](https://badgen.net/badge/version/v0.0.1/green) ![my badge](https://badgen.net/badge/icon/v8.5.5/green?icon=npm&label) ![my badge](https://badgen.net/badge/nodejs/v16.15.0/green) ![my badge](https://badgen.net/badge/truffle/v5.5.9/green) ![my badge](https://badgen.net/badge/solidity-compiler/v0.8.13/green)
+
 # Solidity ICO Presale Smart Contract
-
-![my badge](https://badgen.net/badge/license/MIT/green)
-
-![my badge](https://badgen.net/badge/version/1.0.0/green)
-
-![my badge](https://badgen.net/badge/icon/8.5.5/green?icon=npm&label)
-
-![my badge](https://badgen.net/badge/nodejs/16.15.0/green)
-
-![my badge](https://badgen.net/badge/truffle/5.5.9/green)
-
-![my badge](https://badgen.net/badge/solidity-compiler/0.8.13/green)
 
 This project demonstrates how to develop an ERC20 Token smart contract and its presale smart contract for an Initial Coin Offering deployed on BSC (but it's applicable for any Ethereum-based blockchain as Polygon).
 
@@ -26,7 +16,7 @@ If you decide to deploy both SC at once, it is done automatically by Truffle.
 
 Once both SC are deployed, 
 
-NOTICE: Token.sol doesn't work on localhost, so if you need to do some testings, it should be deployed on the testnet.
+ℹ NOTICE: Token.sol doesn't work on localhost, so if you need to do some testings, it should be deployed on the testnet.
 
 ## Token.sol
 
