@@ -35,7 +35,4 @@ This smart contract allows to create and manage an ERC20 Token. It has the follo
 
 ## 📄 TokenPresale.sol
 
-This smart contract allows to manage the ICO for such ERC20 Token. It has the following features:
-
-*   It can swap BNB for TKN during the presale.
-*   
+This smart contract allows to manage the ICO for such ERC20 Token. It is able to swap BNB for TKN during the presale.
