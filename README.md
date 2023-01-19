@@ -4,6 +4,10 @@
 
 This project demonstrates how to develop an ERC20 Token smart contract and its presale smart contract for an Initial Coin Offering deployed on BSC (but it's applicable for any Ethereum-based blockchain).
 
+## ⚠ Disclaimer
+
+This is a sample application with demonstration purpose only. Use it at your own risk.
+
 ## How it works
 
 Once both SC are deployed, anybody can buy tokens with BNB on TokenPresale.sol until presale ends. After presale finishes and owner transfers funds through transferTokens() and calls addLiquidityToPS() to add liquidity to PancakeSwap (is needed to add liquidity manually by the owner before this call?), anyone can buy and sell tokens on this DEX.
