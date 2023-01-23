@@ -35,7 +35,8 @@ This smart contract allows to create and manage an ERC20 Token. It has the follo
 
 This smart contract allows to manage the ICO for such ERC20 Token without intermediaries.
 *   It is able to swap BNB for TKN during the presale.
-*   Any user account should be whitelisted previously (if whitelist is enabled) in order to be able to buy tokens, unless this functionality is disabled. *   User accounts may be added/removed to the whitelist with addToWhiteList(), addManyToWhitelist() and removeFromWhiteList() functions.
+*   Any user account should be whitelisted previously (if whitelist is enabled) in order to be able to buy tokens, unless this functionality is disabled.
+*   User accounts may be added/removed to the whitelist with addToWhiteList(), addManyToWhitelist() and removeFromWhiteList() functions.
 *   Any whitelisted user may exchange his BNBs for tokens with buyTokens() function.
 *   It allows the owner to pause buyTokens() function if necessary.
 *   Once the presale ends, it allows to transfer funds to the owner, then the owner should send BNBs and TKNs to PancakeSwap through addLiquidityToPS() function.
