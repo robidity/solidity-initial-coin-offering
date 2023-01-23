@@ -19,8 +19,6 @@ The first SC that must be deployed is Token.sol.
 TokenPresale.sol SC must be deployed (by passing ERC20 Token smart contract address in the constructor) right after Token.sol is deployed, otherwise any attacker may set the presale contract address by calling setPresaleContractAddress() from Token.sol.
 If you decide to deploy both SC at once, it is done automatically by Truffle, avoiding any risk.
 
-ℹ NOTICE: Token.sol can't be deployed on localhost due to PancakeSwap Router address can't be reached from local, so if you need to do some testings, it should be deployed on the testnet or mainnet.
-
 ## 📄 Token.sol
 
 This smart contract allows to create and manage an ERC20 Token. It has the following features:
@@ -35,4 +33,10 @@ This smart contract allows to create and manage an ERC20 Token. It has the follo
 
 ## 📄 TokenPresale.sol
 
-This smart contract allows to manage the ICO for such ERC20 Token. It is able to swap BNB for TKN during the presale.
+This smart contract allows to manage the ICO for such ERC20 Token without intermediaries.
+*   It is able to swap BNB for TKN during the presale.
+*   Any user account should be whitelisted previously (if whitelist is enabled) in order to be able to buy tokens, unless this functionality is disabled. *   User accounts may be added/removed to the whitelist with addToWhiteList(), addManyToWhitelist() and removeFromWhiteList() functions.
+*   Any whitelisted user may exchange his BNBs for tokens with buyTokens() function.
+*   It allows the owner to pause buyTokens() function if necessary.
+*   Once the presale ends, it allows to transfer funds to the owner, then the owner should send BNBs and TKNs to PancakeSwap through addLiquidityToPS() function.
+*   Once token funds are transferred to the owner, tokens are locked for X days.
