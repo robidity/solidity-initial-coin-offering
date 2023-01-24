@@ -246,8 +246,8 @@ contract MyToken is ERC20, Ownable, Pausable {
     address private liquidityTaxWallet = address(0);
 
     /**
-     * @dev This is the only wallet that cannot be changed. This is the wallet you use to retrieve liquidity from PancakeSwap
-     * This is the same wallet as the presaleLiquidityWallet on TokenPresale.sol
+     * @dev This is the only wallet that cannot be changed once it is deployed. This is the wallet you use to retrieve liquidity from PancakeSwap.
+     * This is the same address as the presaleLiquidityWallet on TokenPresale.sol
      */
     address private presaleLiquidityWallet = address(0);
 
@@ -488,7 +488,7 @@ contract MyToken is ERC20, Ownable, Pausable {
     }
 
     /**
-     * @dev Set presale contract address automatically right after presale contract is deployed
+     * @dev Sets presale contract address. It is called automatically right after presale contract is deployed.
      */
     function setPresaleContractAddress() external override returns (address) {
         require(presaleContractAddress == address(0), "Address already initialized");
